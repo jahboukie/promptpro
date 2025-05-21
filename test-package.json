@@ -1,0 +1,13 @@
+{
+  "name": "promptpro-tests",
+  "version": "1.0.0",
+  "description": "Testing scripts for PromptPro advanced features",
+  "main": "test-promptpro.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test-promptpro.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

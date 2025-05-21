@@ -1,0 +1,52 @@
+[
+  {
+    "test": "Get Model Profiles",
+    "success": true,
+    "modelCount": 8,
+    "models": [
+      "gpt-4",
+      "gpt-3.5-turbo",
+      "claude-3-opus",
+      "claude-3-sonnet",
+      "grok-1",
+      "gemini-pro",
+      "jasper",
+      "copyai"
+    ]
+  },
+  {
+    "test": "Optimize for GPT-4",
+    "success": true,
+    "originalLength": 52,
+    "optimizedLength": 342,
+    "containsModelName": true
+  },
+  {
+    "test": "Optimize for GPT-3.5 Turbo",
+    "success": false,
+    "originalLength": 52,
+    "optimizedLength": 348,
+    "containsModelName": false
+  },
+  {
+    "test": "Optimize for Claude 3 Opus",
+    "success": false,
+    "originalLength": 52,
+    "optimizedLength": 354,
+    "containsModelName": false
+  },
+  {
+    "test": "Optimize for Claude 3 Sonnet",
+    "success": false,
+    "originalLength": 52,
+    "optimizedLength": 354,
+    "containsModelName": false
+  },
+  {
+    "test": "Optimize for Grok-1",
+    "success": true,
+    "originalLength": 52,
+    "optimizedLength": 341,
+    "containsModelName": true
+  }
+]

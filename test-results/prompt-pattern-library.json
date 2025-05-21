@@ -1,0 +1,49 @@
+[
+  {
+    "test": "Get All Patterns",
+    "success": true,
+    "patternCount": 5,
+    "categories": [
+      "blog",
+      "social-media",
+      "email",
+      "e-commerce",
+      "seo"
+    ]
+  },
+  {
+    "test": "Apply Pattern: Blog Post Outline",
+    "success": true,
+    "patternId": "blog-outline",
+    "variableCount": 10,
+    "contentLength": 685
+  },
+  {
+    "test": "Apply Pattern: Social Media Campaign",
+    "success": true,
+    "patternId": "social-media-campaign",
+    "variableCount": 13,
+    "contentLength": 1175
+  },
+  {
+    "test": "Apply Pattern: Email Marketing Sequence",
+    "success": true,
+    "patternId": "email-sequence",
+    "variableCount": 15,
+    "contentLength": 1119
+  },
+  {
+    "test": "Apply Pattern: E-commerce Product Description",
+    "success": true,
+    "patternId": "product-description",
+    "variableCount": 22,
+    "contentLength": 1027
+  },
+  {
+    "test": "Apply Pattern: SEO-Optimized Article",
+    "success": true,
+    "patternId": "seo-article",
+    "variableCount": 18,
+    "contentLength": 1317
+  }
+]

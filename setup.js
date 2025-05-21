@@ -2,7 +2,7 @@
 
 /**
  * AI Prompting Tool Setup Script
- * 
+ *
  * This script helps set up the AI Prompting Tool project by:
  * 1. Checking prerequisites
  * 2. Installing dependencies
@@ -10,10 +10,13 @@
  * 4. Starting the development server
  */
 
-const { execSync } = require('child_process');
-const fs = require('fs');
-const path = require('path');
-const readline = require('readline');
+import { execSync } from 'child_process';
+import fs from 'fs';
+import path from 'path';
+import readline from 'readline';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import dotenv from 'dotenv';
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -74,7 +77,7 @@ function checkNodeVersion() {
   try {
     const nodeVersion = execSync('node --version', { encoding: 'utf8' }).trim();
     const majorVersion = parseInt(nodeVersion.slice(1).split('.')[0], 10);
-    
+
     if (majorVersion < 20) {
       console.log(`${colors.yellow}Warning: You are using Node.js ${nodeVersion}. We recommend Node.js 20 or later.${colors.reset}`);
       return false;
@@ -94,7 +97,7 @@ function checkNpmVersion() {
   try {
     const npmVersion = execSync('npm --version', { encoding: 'utf8' }).trim();
     const majorVersion = parseInt(npmVersion.split('.')[0], 10);
-    
+
     if (majorVersion < 9) {
       console.log(`${colors.yellow}Warning: You are using npm ${npmVersion}. We recommend npm 9 or later.${colors.reset}`);
       return false;
@@ -111,12 +114,12 @@ function checkNpmVersion() {
 // Function to check if PostgreSQL is available
 function checkPostgres() {
   console.log(`${colors.bright}Checking PostgreSQL...${colors.reset}`);
-  
+
   if (process.env.DATABASE_URL) {
     console.log(`${colors.green}DATABASE_URL environment variable found. ✓${colors.reset}`);
     return true;
   }
-  
+
   if (commandExists('psql')) {
     console.log(`${colors.green}PostgreSQL client (psql) detected. ✓${colors.reset}`);
     return true;
@@ -137,14 +140,14 @@ function installDependencies() {
 // Function to check if .env file exists, create if not
 function setupEnvFile() {
   console.log(`\n${colors.bright}Setting up environment variables...${colors.reset}`);
-  
+
   const envPath = path.join(process.cwd(), '.env');
-  
+
   if (fs.existsSync(envPath)) {
     console.log(`${colors.green}Found existing .env file. ✓${colors.reset}`);
     return;
   }
-  
+
   // Create a basic .env file
   const defaultEnv = `# Database URL for PostgreSQL
 DATABASE_URL=postgresql://postgres:postgres@localhost:5432/ai_prompting_tool
@@ -162,21 +165,21 @@ NODE_ENV=development
 // Function to set up the database
 function setupDatabase() {
   console.log(`\n${colors.bright}Setting up database...${colors.reset}`);
-  
+
   if (!process.env.DATABASE_URL) {
     console.log(`${colors.yellow}Warning: DATABASE_URL not set in environment.${colors.reset}`);
     console.log(`${colors.yellow}Attempting to use default settings from .env file.${colors.reset}`);
-    
+
     // Load variables from .env file
-    require('dotenv').config();
+    dotenv.config();
   }
-  
+
   if (!process.env.DATABASE_URL) {
     console.log(`${colors.red}Error: DATABASE_URL still not available.${colors.reset}`);
     console.log(`${colors.yellow}Please set up your database connection and try again.${colors.reset}`);
     return false;
   }
-  
+
   try {
     console.log(`${colors.bright}Pushing database schema...${colors.reset}`);
     execCommand('npm run db:push', { ignoreError: true });
@@ -203,16 +206,16 @@ async function main() {
   const nodeOk = checkNodeVersion();
   const npmOk = checkNpmVersion();
   const postgresOk = checkPostgres();
-  
+
   if (!nodeOk || !npmOk) {
     console.log(`\n${colors.red}Please install the required prerequisites and try again.${colors.reset}`);
     process.exit(1);
   }
-  
+
   if (!postgresOk) {
     console.log(`\n${colors.yellow}You will need to set up PostgreSQL manually.${colors.reset}`);
   }
-  
+
   // Confirm continuation
   rl.question(`\n${colors.bright}Continue with setup? (y/n) ${colors.reset}`, answer => {
     if (answer.toLowerCase() !== 'y') {
@@ -220,23 +223,23 @@ async function main() {
       rl.close();
       return;
     }
-    
+
     // Install dependencies
     console.log(`\n${colors.bright}Step 2: Installing dependencies${colors.reset}`);
     installDependencies();
-    
+
     // Set up environment
     console.log(`\n${colors.bright}Step 3: Setting up environment${colors.reset}`);
     setupEnvFile();
-    
+
     // Set up database
     console.log(`\n${colors.bright}Step 4: Setting up database${colors.reset}`);
     const dbOk = setupDatabase();
-    
+
     if (!dbOk) {
       console.log(`\n${colors.yellow}Database setup incomplete. You will need to set up the database manually.${colors.reset}`);
     }
-    
+
     // Ask if user wants to start the dev server
     rl.question(`\n${colors.bright}Start the development server? (y/n) ${colors.reset}`, answer => {
       if (answer.toLowerCase() === 'y') {

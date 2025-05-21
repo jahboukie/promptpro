@@ -1,0 +1,20 @@
+[
+  {
+    "test": "End-to-End: \"Create a blog post about susta...\"",
+    "success": true,
+    "promptScore": 86,
+    "responseLength": 2933,
+    "model": "GPT-4",
+    "promptTitle": "Blog Post Outline for Create a blog post about sustainable fashion to increase brand awareness",
+    "promptContentPreview": "Create a comprehensive outline for a blog post titled \"{{title}}\" targeting {{audience}}. The post s..."
+  },
+  {
+    "test": "End-to-End: \"Design an email sequence for a...\"",
+    "success": true,
+    "promptScore": 85,
+    "responseLength": 2618,
+    "model": "GPT-4",
+    "promptTitle": "Social Media Campaign for Design an email sequence for a SaaS product launch to generate leads",
+    "promptContentPreview": "Create a comprehensive social media campaign for {{product/service}} targeting {{audience}}. The cam..."
+  }
+]

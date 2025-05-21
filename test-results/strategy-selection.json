@@ -1,0 +1,302 @@
+[
+  {
+    "test": "Get Goals and Types",
+    "success": true,
+    "goalCount": 6,
+    "typeCount": 6
+  },
+  {
+    "test": "Strategy for brand-awareness/blog-post",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for brand-awareness/social-media-post",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for brand-awareness/email",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 3,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for brand-awareness/product-description",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for brand-awareness/landing-page",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 3,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for brand-awareness/whitepaper",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for lead-generation/blog-post",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for lead-generation/social-media-post",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 3,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for lead-generation/email",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 4,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for lead-generation/product-description",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 3,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for lead-generation/landing-page",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 4,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for lead-generation/whitepaper",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for conversion/blog-post",
+    "success": true,
+    "patternCount": 4,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for conversion/social-media-post",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 3,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for conversion/email",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 4,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for conversion/product-description",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 3,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for conversion/landing-page",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 4,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for conversion/whitepaper",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for customer-retention/blog-post",
+    "success": true,
+    "patternCount": 4,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for customer-retention/social-media-post",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for customer-retention/email",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 3,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for customer-retention/product-description",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for customer-retention/landing-page",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 3,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for customer-retention/whitepaper",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for seo/blog-post",
+    "success": true,
+    "patternCount": 2,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for seo/social-media-post",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 1,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for seo/email",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for seo/product-description",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 1,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for seo/landing-page",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for seo/whitepaper",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for thought-leadership/blog-post",
+    "success": true,
+    "patternCount": 2,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for thought-leadership/social-media-post",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 1,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for thought-leadership/email",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for thought-leadership/product-description",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 1,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for thought-leadership/landing-page",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Strategy for thought-leadership/whitepaper",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Analyze Input: \"Create a blog post about susta...\"",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Analyze Input: \"Design an email sequence for a...\"",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 3,
+    "tipCount": 4
+  },
+  {
+    "test": "Analyze Input: \"Write product descriptions for...\"",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Analyze Input: \"Develop a social media campaig...\"",
+    "success": true,
+    "patternCount": 1,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Analyze Input: \"Create SEO-optimized content a...\"",
+    "success": true,
+    "patternCount": 2,
+    "modelCount": 2,
+    "tipCount": 4
+  },
+  {
+    "test": "Analyze Input: \"Write a whitepaper on artifici...\"",
+    "success": true,
+    "patternCount": 3,
+    "modelCount": 2,
+    "tipCount": 4
+  }
+]

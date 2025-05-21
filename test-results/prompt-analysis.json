@@ -1,0 +1,59 @@
+[
+  {
+    "test": "Analyze Prompt 1",
+    "success": true,
+    "score": 82,
+    "expectedRange": [
+      70,
+      100
+    ],
+    "scoreInRange": true,
+    "strengthCount": 4,
+    "weaknessCount": 0,
+    "improvementCount": 0,
+    "clarity": 9,
+    "specificity": 8,
+    "engagement": 5,
+    "persuasiveness": 6,
+    "completeness": 10,
+    "readabilityScore": 41.077500000000015
+  },
+  {
+    "test": "Analyze Prompt 2",
+    "success": false,
+    "score": 73,
+    "expectedRange": [
+      40,
+      70
+    ],
+    "scoreInRange": false,
+    "strengthCount": 2,
+    "weaknessCount": 0,
+    "improvementCount": 0,
+    "clarity": 8,
+    "specificity": 5,
+    "engagement": 5,
+    "persuasiveness": 6,
+    "completeness": 9,
+    "readabilityScore": 56.70000000000002
+  },
+  {
+    "test": "Analyze Prompt 3",
+    "success": false,
+    "score": 56,
+    "expectedRange": [
+      0,
+      40
+    ],
+    "scoreInRange": false,
+    "strengthCount": 2,
+    "weaknessCount": 2,
+    "improvementCount": 2,
+    "clarity": 7,
+    "specificity": 3,
+    "engagement": 5,
+    "persuasiveness": 5,
+    "completeness": 4,
+    "readabilityScore": 77.90500000000002
+  }
+]

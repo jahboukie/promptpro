@@ -1,0 +1,499 @@
+{
+  "timestamp": "2025-05-21T16:20:06.844Z",
+  "llmOptimization": [
+    {
+      "test": "Get Model Profiles",
+      "success": true,
+      "modelCount": 8,
+      "models": [
+        "gpt-4",
+        "gpt-3.5-turbo",
+        "claude-3-opus",
+        "claude-3-sonnet",
+        "grok-1",
+        "gemini-pro",
+        "jasper",
+        "copyai"
+      ]
+    },
+    {
+      "test": "Optimize for GPT-4",
+      "success": true,
+      "originalLength": 52,
+      "optimizedLength": 342,
+      "containsModelName": true
+    },
+    {
+      "test": "Optimize for GPT-3.5 Turbo",
+      "success": false,
+      "originalLength": 52,
+      "optimizedLength": 348,
+      "containsModelName": false
+    },
+    {
+      "test": "Optimize for Claude 3 Opus",
+      "success": false,
+      "originalLength": 52,
+      "optimizedLength": 354,
+      "containsModelName": false
+    },
+    {
+      "test": "Optimize for Claude 3 Sonnet",
+      "success": false,
+      "originalLength": 52,
+      "optimizedLength": 354,
+      "containsModelName": false
+    },
+    {
+      "test": "Optimize for Grok-1",
+      "success": true,
+      "originalLength": 52,
+      "optimizedLength": 341,
+      "containsModelName": true
+    }
+  ],
+  "promptPatternLibrary": [
+    {
+      "test": "Get All Patterns",
+      "success": true,
+      "patternCount": 5,
+      "categories": [
+        "blog",
+        "social-media",
+        "email",
+        "e-commerce",
+        "seo"
+      ]
+    },
+    {
+      "test": "Apply Pattern: Blog Post Outline",
+      "success": true,
+      "patternId": "blog-outline",
+      "variableCount": 10,
+      "contentLength": 685
+    },
+    {
+      "test": "Apply Pattern: Social Media Campaign",
+      "success": true,
+      "patternId": "social-media-campaign",
+      "variableCount": 13,
+      "contentLength": 1175
+    },
+    {
+      "test": "Apply Pattern: Email Marketing Sequence",
+      "success": true,
+      "patternId": "email-sequence",
+      "variableCount": 15,
+      "contentLength": 1119
+    },
+    {
+      "test": "Apply Pattern: E-commerce Product Description",
+      "success": true,
+      "patternId": "product-description",
+      "variableCount": 22,
+      "contentLength": 1027
+    },
+    {
+      "test": "Apply Pattern: SEO-Optimized Article",
+      "success": true,
+      "patternId": "seo-article",
+      "variableCount": 18,
+      "contentLength": 1317
+    }
+  ],
+  "strategySelection": [
+    {
+      "test": "Get Goals and Types",
+      "success": true,
+      "goalCount": 6,
+      "typeCount": 6
+    },
+    {
+      "test": "Strategy for brand-awareness/blog-post",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for brand-awareness/social-media-post",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for brand-awareness/email",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 3,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for brand-awareness/product-description",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for brand-awareness/landing-page",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 3,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for brand-awareness/whitepaper",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for lead-generation/blog-post",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for lead-generation/social-media-post",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 3,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for lead-generation/email",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 4,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for lead-generation/product-description",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 3,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for lead-generation/landing-page",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 4,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for lead-generation/whitepaper",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for conversion/blog-post",
+      "success": true,
+      "patternCount": 4,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for conversion/social-media-post",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 3,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for conversion/email",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 4,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for conversion/product-description",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 3,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for conversion/landing-page",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 4,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for conversion/whitepaper",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for customer-retention/blog-post",
+      "success": true,
+      "patternCount": 4,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for customer-retention/social-media-post",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for customer-retention/email",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 3,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for customer-retention/product-description",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for customer-retention/landing-page",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 3,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for customer-retention/whitepaper",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for seo/blog-post",
+      "success": true,
+      "patternCount": 2,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for seo/social-media-post",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 1,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for seo/email",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for seo/product-description",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 1,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for seo/landing-page",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for seo/whitepaper",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for thought-leadership/blog-post",
+      "success": true,
+      "patternCount": 2,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for thought-leadership/social-media-post",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 1,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for thought-leadership/email",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for thought-leadership/product-description",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 1,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for thought-leadership/landing-page",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Strategy for thought-leadership/whitepaper",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Analyze Input: \"Create a blog post about susta...\"",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Analyze Input: \"Design an email sequence for a...\"",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 3,
+      "tipCount": 4
+    },
+    {
+      "test": "Analyze Input: \"Write product descriptions for...\"",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Analyze Input: \"Develop a social media campaig...\"",
+      "success": true,
+      "patternCount": 1,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Analyze Input: \"Create SEO-optimized content a...\"",
+      "success": true,
+      "patternCount": 2,
+      "modelCount": 2,
+      "tipCount": 4
+    },
+    {
+      "test": "Analyze Input: \"Write a whitepaper on artifici...\"",
+      "success": true,
+      "patternCount": 3,
+      "modelCount": 2,
+      "tipCount": 4
+    }
+  ],
+  "promptAnalysis": [
+    {
+      "test": "Analyze Prompt 1",
+      "success": true,
+      "score": 82,
+      "expectedRange": [
+        70,
+        100
+      ],
+      "scoreInRange": true,
+      "strengthCount": 4,
+      "weaknessCount": 0,
+      "improvementCount": 0,
+      "clarity": 9,
+      "specificity": 8,
+      "engagement": 5,
+      "persuasiveness": 6,
+      "completeness": 10,
+      "readabilityScore": 41.077500000000015
+    },
+    {
+      "test": "Analyze Prompt 2",
+      "success": false,
+      "score": 73,
+      "expectedRange": [
+        40,
+        70
+      ],
+      "scoreInRange": false,
+      "strengthCount": 2,
+      "weaknessCount": 0,
+      "improvementCount": 0,
+      "clarity": 8,
+      "specificity": 5,
+      "engagement": 5,
+      "persuasiveness": 6,
+      "completeness": 9,
+      "readabilityScore": 56.70000000000002
+    },
+    {
+      "test": "Analyze Prompt 3",
+      "success": false,
+      "score": 56,
+      "expectedRange": [
+        0,
+        40
+      ],
+      "scoreInRange": false,
+      "strengthCount": 2,
+      "weaknessCount": 2,
+      "improvementCount": 2,
+      "clarity": 7,
+      "specificity": 3,
+      "engagement": 5,
+      "persuasiveness": 5,
+      "completeness": 4,
+      "readabilityScore": 77.90500000000002
+    }
+  ],
+  "endToEnd": [
+    {
+      "test": "End-to-End: \"Create a blog post about susta...\"",
+      "success": true,
+      "promptScore": 86,
+      "responseLength": 2933,
+      "model": "GPT-4",
+      "promptTitle": "Blog Post Outline for Create a blog post about sustainable fashion to increase brand awareness",
+      "promptContentPreview": "Create a comprehensive outline for a blog post titled \"{{title}}\" targeting {{audience}}. The post s..."
+    },
+    {
+      "test": "End-to-End: \"Design an email sequence for a...\"",
+      "success": true,
+      "promptScore": 85,
+      "responseLength": 2618,
+      "model": "GPT-4",
+      "promptTitle": "Social Media Campaign for Design an email sequence for a SaaS product launch to generate leads",
+      "promptContentPreview": "Create a comprehensive social media campaign for {{product/service}} targeting {{audience}}. The cam..."
+    }
+  ],
+  "duration": 45.946,
+  "summary": {
+    "totalTests": 60,
+    "totalSuccesses": 55,
+    "featureResults": {
+      "llmOptimization": "3/6",
+      "promptPatternLibrary": "6/6",
+      "strategySelection": "43/43",
+      "promptAnalysis": "1/3",
+      "endToEnd": "2/2"
+    },
+    "duration": "45.95 seconds",
+    "successRate": "91.67%"
+  }
+}

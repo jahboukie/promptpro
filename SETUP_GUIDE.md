@@ -36,7 +36,7 @@ This installs all the necessary packages specified in `package.json`.
    ```
 3. Create a `.env` file in the project root with the following contents:
    ```
-   DATABASE_URL=postgresql://<username>:<password>@localhost:5432/ai_prompting_tool
+   DATABASE_URL=postgresql://postgres:replitcore@localhost:5433/ai_prompting_tool
    ```
 
 ### Option 2: Remote PostgreSQL (Neon, Supabase, etc.)
